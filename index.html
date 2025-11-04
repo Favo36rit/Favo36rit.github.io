@@ -18,7 +18,7 @@
             <h1> Добро пожаловать на мой мини-сайт!</h1>
 			<p><strong>Пароль:</strong>				
 			<input  maxlength="25" size="40" name="password" id="id_ftext" value="111" ></p>   			
-   			<p><input type="submit" onclick="f1()" value="Войти"></p>
+   			<p><input type="submit" onclick="f1()" value="Войти" id="btnID"></p>
 
             <img id="image" src="foto1.jpg" >
             <script type = "text/javascript">
@@ -37,7 +37,8 @@
 			<script>
         		function show()
 				{
-                    document.getElementById('image').style.display = "block";				
+                    document.getElementById('image').style.display = "block";	
+					 document.getElementById('btnID').style.display = "none";
         		}
     		</script>
 
