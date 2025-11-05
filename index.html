@@ -63,15 +63,18 @@
 				if (element.value == "2312")					
 					{show();}
 				else
-					{document.getElementById('id_proverka').style.display = "block";
-					 document.getElementById('id_proverka').style.color = "red";
-					
+					{
+					document.getElementById('id_proverka').style.display = "block";
+					if (document.getElementById('id_proverka').style.color == "red") 
+						{document.getElementById('id_proverka').style.color = "blue";}
+					 else
+						{document.getElementById('id_proverka').style.color = "red";} 					
 					}				
 			}        	
     		</script>
 
             <br>			
-            <p> Спасибо за визит41! </p>
+            <p> Спасибо за визит42! </p>
 			
         </div>
 
