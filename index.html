@@ -21,7 +21,8 @@
         <div align='center'>
             <h1> Добро пожаловать на мой мини-сайт!</h1>
 			<p><strong id="id_prl" > Введите пароль: ( 4 цифры - день и месяц день рождения) </strong>				
-			<input  maxlength="4" size="4" name="password" id="id_ftext" value="2312" ></p>   			
+			<input  maxlength="4" size="4" name="password" id="id_ftext" value="2312" ></p>  
+			<span id="error"></span>
    			<p><input type="submit" onclick="f1()" value="Проверка пароля" id="btnID"></p>
 			<label for="btnID" id="id_proverka">Ошибка - уточните день и месяц рождения!</label>
 		</div>
@@ -63,7 +64,9 @@
 					{show();}
 				else
 					{document.getElementById('id_proverka').style.display = "block";
-					 document.getElementById('id_proverka').color: #555;					
+					 document.getElementById('id_proverka').color: #555;
+					 error.innerHTML = "<span style='color: red;'>"+
+                        "Please enter a valid number</span>";
 					}				
 			}        	
     		</script>
