@@ -103,9 +103,22 @@
   				<figcaption>Listen to the T-Rex:</figcaption>
   				<audio controls src="vi.mp3"></audio>
   				<a href="vi.mp3"> Download audio </a>
+				<button id=»playButton»>Воспроизвести</button>
 			</figure>
+
+			<figure2>
+				<input type="button" value="sound" onclick="playMusic()" />
+				<script>
+				function playMusic()
+				{
+ 			 	var music = new Audio('vi.mp3');
+ 			 	music.play();
+  				}
+				</script>
+			</figure2>
+			
 			<br>
-            <p> Спасибо за визит75! </p>
+            <p> Спасибо за визит76! </p>
 			
         </div>
 
