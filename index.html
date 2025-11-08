@@ -48,7 +48,7 @@
                 		image.src = images[currentPos];
 						document.getElementById("error").textContent ="Дата - "+images_time[currentPos];								
             	}
-            	setInterval(volgendefoto, 5000);
+            	setInterval(volgendefoto, 7000);
             </script>
 
 			<img id="image2" src="g1.jpg" >
@@ -62,7 +62,8 @@
                     	currentPos2 = 0;
                 		image2.src = images2[currentPos2];										
             	}
-            	setInterval(volgendefoto2, 5000);
+				if (currentPos2<2)
+				{	setInterval(volgendefoto2, 7000);}
             </script>			
 
 			<script>
@@ -114,7 +115,7 @@
 			</div>
 			
 			<br>
-            <p id="id_spasibo"> Спасибо за визит95! </p>
+            <p id="id_spasibo"> Спасибо за визит96! </p>
 			
         </div>
 
