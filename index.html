@@ -113,9 +113,19 @@
 			<div id="id_muz">
 				<label> Музыкальный фон: <audio controls autoplay src="vi.mp3" id="myAudio" ></audio> </label>				
 			</div>
+			<script>
+				var aud = document.getElementById("myAudio");
+				aud.onended = function()
+				{
+    			alert("Звук закончился");
+				};
+			</script>
+
+			
+			
 			
 			<br>
-            <p id="id_spasibo"> Спасибо за визит12! </p>
+            <p id="id_spasibo"> Спасибо за визит13! </p>
 			
         </div>
 
