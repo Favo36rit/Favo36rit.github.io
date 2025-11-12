@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 	<head>
     	<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 			#id_proverka
 			{display: none;}
 			#error
-			{display: none;}	
+			{display: none;}
 			#id_muz
 			{display: none;}
 			#id_drfot
@@ -20,129 +20,124 @@
 			#id_spasibo
 			{display: none;}
 			#id_spasibo2
-			{display: none;}			
+			{display: none;}
     	</style>
 	</head>
-    
+
 	<body>
 
         <div align='center'>
-            <h1 id="id_minisite"> Добро пожаловать на мой мини-сайт5!</h1>
-			<p><strong id="id_prl" > Введите пароль: ( 4 цифры - день и месяц рождения) </strong>				
-			<input  maxlength="4" size="4" name="password" id="id_ftext" value="0000" ></p>  
+            <h1 id="id_minisite"> Добро пожаловать на мой мини-сайт!</h1>
+			<p><strong id="id_prl" > Введите пароль: ( 4 цифры - день и месяц рождения) </strong>
+			<input  maxlength="4" size="4" name="password" id="id_ftext" value="0000" ></p>
 			<span id="error" ></span>
    			<p><input type="submit" onclick="f1()" value="Проверка пароля" id="btnID"></p>
 			<label for="btnID" id="id_proverka">Ошибка - уточните день и месяц рождения!</label>
 		</div>
 
 		<div align='center'>
-			
+
             <img id="image0" src="key2.jpg" >
-			<img id="image" src="foto1.jpg" >		
-			<p><input type="submit" onclick="f2()" value="Фотки из юности" id="id_drfot"></p>			
-            <script type = "text/javascript">					
-				var image = document.getElementById("image");				
-            	var currentPos = 0;			
-				var images = ["g7.jpg", "s11.jpg", "s2.jpg", "s3.jpg", "s4.jpg", "s5.jpg", "s6.jpg", "s7.jpg"];	
-				var images_time = ["9 ‎ноября ‎2025 ‎г.", " весна ‎2025 ‎г.", "3", "4", "3", "4", "5", "6", "7", "8"];						
+			<img id="image" src="foto1.jpg" >
+			<p><input type="submit" onclick="f2()" value="Фотки из юности" id="id_drfot"></p>
+            <script type = "text/javascript">
+				var image = document.getElementById("image");
+            	var currentPos = 0;
+				var images = ["g7.jpg", "s11.jpg", "s2.jpg", "s3.jpg", "s4.jpg", "s5.jpg", "s6.jpg", "s7.jpg"];
+				var images_time = ["9 ‎ноября ‎2025 ‎г.", " весна ‎2025 ‎г.", "3", "4", "3", "4", "5", "6", "7", "8"];
             	function volgendefoto()
 				{
-                	if (++currentPos >= images.length) 						
+                	if (++currentPos >= images.length)
                     	currentPos = 0;
                 		image.src = images[currentPos];
-						document.getElementById("error").textContent ="Дата - "+images_time[currentPos];								
+						document.getElementById("error").textContent ="Дата - "+images_time[currentPos];
             	}
             	setInterval(volgendefoto, 7000);
             </script>
 
 			<img id="image2" src="g1.jpg" >
-			<script type = "text/javascript">	
+			<script type = "text/javascript">
 				var tek1 = 0;
 				var image2 = document.getElementById("image2");
             	var currentPos2 = 0;
-				var images2 = ["f1.jpg","f2.jpg","f3.jpg","f4.jpg","f5.jpg","f6.jpg","f7.jpg","f8.jpg","f9.jpg","f10.jpg","f11.jpg","f12.jpg","f13.jpg","f14.jpg","f15.jpg","f16.jpg","f17.jpg","f18.jpg","f19.jpg","f20.jpg","f21.jpg","f22.jpg","f23.jpg","f24.jpg","f25.jpg"];			
+				var images2 = ["f1.jpg","f2.jpg","f3.jpg","f4.jpg","f5.jpg","f6.jpg","f7.jpg","f8.jpg","f9.jpg","f10.jpg","f11.jpg","f12.jpg","f13.jpg","f14.jpg","f15.jpg","f16.jpg","f17.jpg","f18.jpg","f19.jpg","f20.jpg","f21.jpg","f22.jpg","f23.jpg","f24.jpg","f25.jpg"];
             	function volgendefoto2()
 				{
-                	if (++currentPos2 >= images2.length) 						
+                	if (++currentPos2 >= images2.length)
                     	currentPos2 = 0;
-                		image2.src = images2[currentPos2];									
+                		image2.src = images2[currentPos2];
             	}
 				setInterval(volgendefoto2, 7000);
-            </script>			
+            </script>
 
 			<script>
         		function show()
 				{
 					document.getElementById('id_proverka').style.display = "none";
                     document.getElementById('image0').style.display = "none";
-					document.getElementById('image').style.display = "block";	
+					document.getElementById('image').style.display = "block";
 					document.getElementById('btnID').style.display = "none";
 					document.getElementById('id_ftext').style.display = "none";
 					document.getElementById('id_prl').style.display = "none";
 					document.getElementById('error').style.display = "block";
 					document.getElementById('id_drfot').style.display = "block";
-					document.getElementById('id_minisite').style.display = "none";	
-					document.getElementById('error').style.display = "none";	
-					var tek5 = new Date().toLocaleTimeString();						
+					document.getElementById('id_minisite').style.display = "none";
+					document.getElementById('error').style.display = "none";
+					var tek5 = new Date().toLocaleTimeString();
         		}
     		</script>
 
 			<script>
         	function f1()
-			{				
-				if ((document.getElementById("id_ftext").value == "2312") || (document.getElementById("id_ftext").value == "1610"))		 			
+			{
+				if ((document.getElementById("id_ftext").value == "2312") || (document.getElementById("id_ftext").value == "1610"))
 					{show();}
 				else
 					{
 					document.getElementById('id_proverka').style.display = "block";
-					if (document.getElementById('id_proverka').style.color == "red") 
+					if (document.getElementById('id_proverka').style.color == "red")
 						{document.getElementById('id_proverka').style.color = "blue";}
 					 else
-						{document.getElementById('id_proverka').style.color = "red";} 					
-					}				
-			}        	
+						{document.getElementById('id_proverka').style.color = "red";}
+					}
+			}
     		</script>
-	
+
 			<script>
         	function f2()
 			{
 				document.getElementById('id_muz').style.display = "block";
 				document.getElementById('myAudio').play();
-				document.getElementById('image').style.display = "none";	
-				document.getElementById('image2').style.display = "block";	
+				document.getElementById('image').style.display = "none";
+				document.getElementById('image2').style.display = "block";
 				document.getElementById('id_minisite').style.display = "none";
-				document.getElementById('id_drfot').style.display = "none";	
-				document.getElementById('error').style.display = "none";						
+				document.getElementById('id_drfot').style.display = "none";
+				document.getElementById('error').style.display = "none";
 			{display: none;}
 
-			}        	
+			}
     		</script>
 
-            <br>	
+            <br>
 			<div id="id_muz">
-				<label> Музыкальный фон: <audio controls autoplay src="vi.mp3" id="myAudio" ></audio> </label>				
+				<label> Музыкальный фон: <audio controls autoplay src="vi.mp3" id="myAudio" ></audio> </label>
 			</div>
 			<script>
-				var aud = document.getElementById("myAudio");				
+				var aud = document.getElementById("myAudio");
 				aud.onended = function()
 				{
-    				document.getElementById('image2').style.display = "none";	
+    				document.getElementById('image2').style.display = "none";
 					document.getElementById('id_muz').style.display = "none";
 					document.getElementById('id_spasibo').style.display = "block";
-					document.getElementById('id_spasibo2').style.display = "block";	
-					
-					
+					document.getElementById('id_spasibo2').style.display = "block";
 				};
 			</script>
 
-			
-			
-			
 			<br>
             <p id="id_spasibo"> Спасибо за просмотр! </p>
 			<br>
             <p id="id_spasibo2"> Мой email: favo36rit@gmail.com </p>
-			
+
         </div>
 
     </body>
