@@ -4,19 +4,7 @@
     	<meta charset="UTF-8">
     	<title>test</title>
     	<link rel="stylesheet" type="text/css" href="/css/styles.css">
-		<style>  
-			#image 
-			{display: none;}
-			#image2 
-			{display: none;}
-			#id_muz
-			{display: none;}			
-			#id_spasibo
-			{display: none;}
-			#id_spasibo2
-			{display: none;}
-			#id_smailik
-			{display: none;}	
+		<style> 		
 			input[type=submit]{cursor:pointer}
 			form input{float:left;margin:5px}
     	</style>
@@ -25,30 +13,11 @@
 	<body>
 
         <div align='center'>
-            <h1 id="id_minisite"> Добро пожаловать на мой мини-сайт15!</h1>  		
+            <h1 id="id_minisite"> Добро пожаловать на мой мини-сайт16!</h1>  		
 		</div>		
 
-		<form align='left'> 
-			
-			<script>			
-        	function f2()
-			{	
-				var tek1 = new Date();
-				document.getElementById('image').style.display = "block";
-				document.getElementById('id_minisite').style.display = "none";
-				var tek2 =  tek1.getSeconds();	
-				if (tek2>30)
-					document.getElementById('myAudio').src = 'sms2.mp3';	
-				
-				document.getElementById('id_muz').style.display = "block";
-				document.getElementById('myAudio').play();
-				document.getElementById('image2').style.display = "none";			
-											
-			}
-    		</script>
-			
-			<p><input type="submit" onclick="f2()" value="Фотки из юности" id="id_drfot"></p>
-			
+		<form align='left'> 	
+			<p><input type="submit" onclick="f2()" value="Фотки из юности" id="id_drfot"></p>			
 			<script>			
         	function f3()
 			{				
@@ -59,78 +28,6 @@
 			<input type="submit" onclick="f5()" value="2" id="id_Dva">
 			<input type="submit" onclick="f4()" value="Любимые фото" id="id_Udach">
 		</form>	
-		
-		
-
-		<div align='center'>
-
-			<img id="image" src="g7.jpg" >
-			
-            <script type = "text/javascript">
-				var image = document.getElementById("image");
-            	var currentPos = 0;
-				var images = ["s7.jpg", "s12.jpg", "s16.jpg", "s2.jpg", "s3.jpg", "s4.jpg", "g7.jpg"];
-				var images_time = ["1", "2", "3", "4", "5", "6", "7"];
-            	function volgendefoto()
-				{
-                	if (++currentPos >= images.length)
-                    	currentPos = 0;
-                		image.src = images[currentPos];						
-            	}
-            	setInterval(volgendefoto, 7000);
-            </script>
-
-
-			<img id="image2" src="g1.jpg" >
-			<script type = "text/javascript">
-				var tek1 = 0;
-				var image2 = document.getElementById("image2");
-            	var currentPos2 = 0;
-				var images2 = ["f1.jpg","f2.jpg","f3.jpg","f4.jpg"];
-            	var images3 = ["f1.jpg","f2.jpg","f3.jpg","f4.jpg","f5.jpg","f6.jpg","f7.jpg","f8.jpg","f9.jpg","f10.jpg","f11.jpg","f12.jpg","f13.jpg","f14.jpg","f15.jpg","f16.jpg","f17.jpg","f18.jpg","f19.jpg","f20.jpg","f21.jpg","f22.jpg","f23.jpg","f24.jpg","f25.jpg"];
-            	
-				function volgendefoto2()
-				{
-                	if (++currentPos2 >= images2.length)
-                    	currentPos2 = 0;
-                		image2.src = images2[currentPos2];
-            	}
-				setInterval(volgendefoto2, 7000);
-            </script>
-
-		
-			
-
-			
-
-			
-
-            <br>
-			<div id="id_muz">
-				<label> Музыкальный фон: <audio controls src="vi.mp3" id="myAudio" ></audio> </label>
-			</div>
-			
-			<script>
-				var aud = document.getElementById("myAudio");
-				aud.onended = function()
-				{
-    				document.getElementById('image2').style.display = "none";
-					document.getElementById('id_muz').style.display = "none";
-					document.getElementById('id_spasibo').style.display = "block";
-					document.getElementById('id_spasibo2').style.display = "block";
-					document.getElementById('id_smailik').style.display = "block";					
-				};
-			</script>
-
-			<br>
-            <p id="id_spasibo"> Спасибо за просмотр! </p>
-			<br>
-            <p id="id_spasibo2"> Мой email: favo36rit@gmail.com </p>
-			<img src="2k.gif" id="id_smailik" width="300" height="300" />
-
-        </div>
-
-		
-
+	
     </body>
 </html>
