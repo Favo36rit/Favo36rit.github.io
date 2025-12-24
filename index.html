@@ -78,8 +78,14 @@
 		
 		<script type="text/javascript">			
         	function f2()
-			{				
-				document.getElementById('id_minisite').style.display = 'none';
+			{	
+				var tek1 = new Date();
+				var tek2 =  tek1.getSeconds();	
+				if (tek2>30)
+					document.getElementById('myAudio').src = 'sms2.mp3';
+				
+				document.getElementById('myAudio').play();
+				document.getElementById('id_minisite').style.display = 'none';				
 				document.getElementById('image').style.display = 'none';
 				document.getElementById('image2').style.display = 'block';
 				document.getElementById('id_muz').style.display = "block";
