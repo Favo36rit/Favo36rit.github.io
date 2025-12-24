@@ -32,21 +32,25 @@
 			<input type="submit" onclick="f5()" value="2" id="id_Dva">
 			<input type="submit" onclick="f4()" value="Любимые фото" id="id_Udach">
 		</form>
+
+	
+		
 		
 		<script>
         	function f2()
 			{			
 				var tek1 = new Date();
-				var tek2 =  tek1.getSeconds();				
+				var tek2 =  tek1.getSeconds();	
 				if (tek2>30)
-					{document.getElementById('myAudio').src = 'sms2.mp3';}
-					
+					document.getElementById('myAudio').src = 'sms2.mp3';	
+				
 				document.getElementById('id_muz').style.display = "block";
 				document.getElementById('myAudio').play();
 				document.getElementById('image').style.display = "none";
 				document.getElementById('image2').style.display = "block";
 				document.getElementById('id_minisite').style.display = "none";
-				document.getElementById('id_drfot').style.display = "none";				
+				document.getElementById('id_drfot').style.display = "none";		
+									
 			}
     		</script>
 
