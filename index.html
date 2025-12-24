@@ -5,7 +5,7 @@
     	<title>test</title>
     	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 		<style>  
-			#image
+			#image2 
 			{display: none;}	
 			#id_muz
 			{display: none;}			
@@ -27,7 +27,7 @@
 		</div>		
 
 		<form align='left'>          
-			<p><input type="submit" onclick="f2()" value="Фотки из юности1" id="id_drfot"></p>
+			<p><input type="submit" onclick="f2()" value="Фотки из юности" id="id_drfot"></p>
 			<input type="submit" onclick="f3()" value="1" id="id_First">
 			<input type="submit" onclick="f5()" value="2" id="id_Dva">
 			<input type="submit" onclick="f4()" value="Любимые фото" id="id_Udach">
@@ -86,24 +86,7 @@
 				{show();}
 			</script>
 
-			<script>
-        	function f2()
-			{			
-				var tek1 = new Date();
-				var tek2 =  tek1.getSeconds();				
-				if (tek2>30)
-					{document.getElementById('myAudio').src = 'sms2.mp3';}
-					
-				document.getElementById('id_muz').style.display = "block";
-				document.getElementById('myAudio').play();
-				document.getElementById('image').style.display = "none";
-				document.getElementById('image2').style.display = "block";
-				document.getElementById('id_minisite').style.display = "none";
-				document.getElementById('id_drfot').style.display = "none";
 			
-				
-			}
-    		</script>
 
             <br>
 			<div id="id_muz">
