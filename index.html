@@ -33,7 +33,20 @@
 			
 			<img id="image" src="g7.jpg" >
 
-			<img id="image2" src="g1.jpg" >
+			<img id="image2" src="f1.jpg" >
+			<script type = "text/javascript">
+				var tek1 = 0;
+				var image2 = document.getElementById("image2");
+            	var currentPos2 = 0;
+				var images2 = ["f1.jpg","f2.jpg","f3.jpg","f4.jpg","f5.jpg","f6.jpg","f7.jpg","f8.jpg","f9.jpg","f10.jpg","f11.jpg","f12.jpg","f13.jpg","f14.jpg","f15.jpg","f16.jpg","f17.jpg","f18.jpg","f19.jpg","f20.jpg","f21.jpg","f22.jpg","f23.jpg","f24.jpg","f25.jpg"];
+            	function volgendefoto2()
+				{
+                	if (++currentPos2 >= images2.length)
+                    	currentPos2 = 0;
+                		image2.src = images2[currentPos2];
+            	}
+				setInterval(volgendefoto2, 7000);
+            </script>
 
 			
 		</div>	
