@@ -23,7 +23,7 @@
 	<body>
 
        	 <div align='center'>
-            <h1 id="id_minisite"> Добро пожаловать на мой мини-сайт32!</h1>  		
+            <h1 id="id_minisite"> Добро пожаловать на мой мини-сайт33!</h1>  		
 		</div>		
 		
 		<btn align='left'>
@@ -31,7 +31,24 @@
 			<input type="submit" onclick="f3()" value="1" id="id_First">
 			<input type="submit" onclick="f5()" value="2" id="id_Dva">
 			<input type="submit" onclick="f4()" value="Любимые фото" id="id_Udach">
+			
+			<div id="id_muz">
+				<label> Музыкальный фон: <audio controls src="vi.mp3" id="myAudio" ></audio> </label>
+			</div>
+			<script>
+				var aud = document.getElementById("myAudio");
+				aud.onended = function()
+				{
+    				document.getElementById('image2').style.display = "none";
+					document.getElementById('id_muz').style.display = "none";
+					document.getElementById('id_spasibo').style.display = "block";
+					document.getElementById('id_spasibo2').style.display = "block";
+					document.getElementById('id_smailik').style.display = "block";					
+				};
+			</script>
+			
 		</btn>	
+		
 
 		<div align='center'>
 			
@@ -54,21 +71,7 @@
 			
 		</div>
 		
-		<br>
-		<div id="id_muz">
-			<label> Музыкальный фон: <audio controls src="vi.mp3" id="myAudio" ></audio> </label>
-		</div>
-		<script>
-			var aud = document.getElementById("myAudio");
-			aud.onended = function()
-			{
-    			document.getElementById('image2').style.display = "none";
-				document.getElementById('id_muz').style.display = "none";
-				document.getElementById('id_spasibo').style.display = "block";
-				document.getElementById('id_spasibo2').style.display = "block";
-				document.getElementById('id_smailik').style.display = "block";					
-			};
-		</script>
+		
 
 		<br>
         <p id="id_spasibo"> Спасибо за просмотр! </p>
